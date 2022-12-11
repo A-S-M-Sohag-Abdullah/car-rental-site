@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persomal Lease</title>
+
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font-awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body>
+
+    <!-- header Start -->
+    <header>
+
+        <!--Navigation  -->
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid px-0">
+                        <a class="navbar-brand pe-lg-5" href="./index.html">Rent A Car</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                       </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link active px-xl-4 px-lg-2 px-0" href="#">Personal Lease</a>
+                                </li>
+                                
+                            </ul>
+                            <form class="d-flex align-items-center">
+
+                                <button class="btn btn-parrot-green" type="submit"><i class="fas fa-phone"></i> Contact us</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <!-- header End -->
+
+    <!-- Main Start -->
+    <main>
+
+        <!-- banner start -->
+        <section id="banner" class="mb-5" style="background: url(./images/Lease-Bg.png);">
+            <div class="container" id="exotic-car-club-banner">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="banner-title">Quick and Easy
+                            <br>  Deals</h1>
+                        <p class="banner-subtitle">Find your next car with our attractive  deals</p>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- banner end -->
+
+       
+
+        <!-- Personal Lease Start -->
+        <section id="lease-deals">
+            <div class="container pb-5 position-relative">
+
+                <div class="row justify-content-between py-4 d-flex align-items-center">
+                    <div class="col-8">
+                        <h2 class="lease-deals-title">Our Personal Lease Fleet</h2>
+                        <p class="lease-deals-subtitle">Lease your dream car with our attractive lease deals. Filter from economy, SUV, convertibles, luxury and more.</p>
+                    </div>
+                    <div class="carousel-nav text-end col">
+
+                        <button class="filter-btn" onclick="$('#filter-form').addClass('d-flex')">Filter<img src="./images/Filter.svg" alt="" class=" ms-2"></button>
+                    </div>
+                </div>
+
+                <div class="row  d-flex">
+                    <div id="filter-terms" class="d-flex ">
+                        <div class="filter-term">
+                            Economy
+                            <button class="cross" onclick="console.log(this.parentElement.classList.add('d-none'));"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="filter-term">
+                            Luxury
+                            <button class="cross" onclick="console.log(this.parentElement.classList.add('d-none'));"><i class="fas fa-times"></i></button>
+                        </div>
+                        <button class="clear-all-btn" onclick="clearFilters(this)">Clear all</button>
+                    </div>
+
+                </div>
+
+                <div class="row pb-3 gy-4 pt-4">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image1.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Nissan Kicks 2020</h4>
+                            <p class="car-mileage">Starting from AED 1,799</p>
+
+                            
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image2.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Infiniti Q50 2020</h4>
+                            <p class="car-mileage">Starting from AED 3,799</p>
+
+                           
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image3.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">BMW 420i 2019</h4>
+                            <p class="car-mileage">Starting from AED 4,440</p>
+
+                           
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image1.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Nissan Kicks 2020</h4>
+                            <p class="car-mileage">Starting from AED 1,799</p>
+
+                           
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image2.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Infiniti Q50 2020</h4>
+                            <p class="car-mileage">Starting from AED 3,799</p>
+
+                          
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image3.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">BMW 420i 2019</h4>
+                            <p class="car-mileage">Starting from AED 4,440</p>
+
+                           
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image1.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Nissan Kicks 2020</h4>
+                            <p class="car-mileage">Starting from AED 1,799</p>
+
+                           
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image2.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Infiniti Q50 2020</h4>
+                            <p class="car-mileage">Starting from AED 3,799</p>
+
+                            
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image3.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">BMW 420i 2019</h4>
+                            <p class="car-mileage">Starting from AED 4,440</p>
+
+                            
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image1.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Nissan Kicks 2020</h4>
+                            <p class="car-mileage">Starting from AED 1,799</p>
+
+                           
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image2.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Infiniti Q50 2020</h4>
+                            <p class="car-mileage">Starting from AED 3,799</p>
+
+                            
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image3.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">BMW 420i 2019</h4>
+                            <p class="car-mileage">Starting from AED 4,440</p>
+
+                           
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image1.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Nissan Kicks 2020</h4>
+                            <p class="car-mileage">Starting from AED 1,799</p>
+
+                            
+                           
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image2.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Infiniti Q50 2020</h4>
+                            <p class="car-mileage">Starting from AED 3,799</p>
+
+                            
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image3.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">BMW 420i 2019</h4>
+                            <p class="car-mileage">Starting from AED 4,440</p>
+
+                           
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form action="" class="justify-content-center filter-form position-absolute top-0  row border-2 pt-3 pb-5 align-items-center" id="filter-form">
+                    <div class="col-lg-11 pt-4 pb-3 border-bottom">
+                        <div class="car-type">
+                            <h4 class="filter-type-title pb-3">Car Type</h4>
+                            <div class="first-row d-flex pb-3 flex-wrap">
+                                <div class="car-type-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">Economy</span>
+                                </div>
+                                <div class="car-type-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">Crossover</span>
+                                </div>
+                                <div class="car-type-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">Intermediate</span>
+                                </div>
+                                <div class="car-type-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">Executive</span>
+                                </div>
+                                <div class="car-type-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">Premium</span>
+                                </div>
+                                <div class="car-type-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">Electric</span>
+                                </div>
+                                <div class="car-type-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">Convertible</span>
+                                </div>
+                                <div class="car-type-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">Sports</span>
+                                </div>
+                                <div class="car-type-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">SUV</span>
+                                </div>
+                                <div class="car-type-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">Luxury</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- <div class="col-lg-11 pt-4 pb-3 border-bottom">
+                        <div class="Lease-duration">
+                            <h4 class="filter-type-title pb-3">Lease Duration</h4>
+                            <div class="first-row d-flex pb-3 flex-wrap">
+
+                                <div class="lease-time-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">36 months</span>
+                                </div>
+                                <div class="lease-time-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">12 months</span>
+                                </div>
+                                <div class="lease-time-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">Monthly</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> -->
+                    <div class="col-lg-11 py-4 ">
+                        <div class="price">
+                            <h4 class="filter-type-title pb-3">Price</h4>
+                            <div class="first-row d-flex pb-3 flex-wrap">
+
+                                <div class="price-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">AED 1,000 - AED 2,000</span>
+                                </div>
+                                <div class="price-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">AED 2,001 - AED 3,000</span>
+                                </div>
+                                <div class="price-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">AED 3,001 - AED 4,000</span>
+                                </div>
+                                <div class="price-selector">
+                                    <input type="checkbox">
+                                    <div class="check-box"><i class="fas fa-check"></i></div>
+                                    <span class="checker-label ">AED 4,001 - AED 5,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <button class="collapse-btn" onclick="event.preventDefault();$('#filter-form').removeClass('d-flex')">Collapse Filters <i class="fas fa-chevron-up ms-2"></i></button>
+                    </div>
+                    <div class="col-6 text-end">
+                        <button type="submit" class="apply-btn btn-parrot-green px-5 py-3">
+                            Apply
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Personal Lease End -->
+
+
+    </main>
+    <!-- Main End -->
+
+    <!-- footer Start -->
+    <footer>
+        <section id="footer">
+            <div class="container py-5">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4 col-sm-6 py-lg-0 py-4 white-border">
+                        <div class="logo-scoial-icons d-flex align-items-center">
+                            <h3 class="footer-logo"> <a href="">Rent A Car</a></h3>
+                            <div class="social-icons">
+                                <a href="">
+                                    <i class="fab fa-twitter px-1"></i>
+                                </a>
+                                <a href=""><i class="fab fa-facebook-f px-1"></i></a>
+                                <a href=""><img src="./images/instagram-icon.png" alt="" class="img-fluid px-1"></a>
+
+                            </div>
+                        </div>
+                        <p class="footer-logo-sub">Our Dubai car leasing experts help you travel better ByRoad. Just drive, we'll take care of the rest.</p>
+                        <div class="app-download">
+                            <a href=""><img src="./images/iTunes Store.svg" alt="" class="img-fluid py-1"></a>
+                            <a href=""><img src="./images/Google Play.svg" alt="" class="img-fluid py-1"></a>
+
+                        </div>
+                        <div class="contact-address">
+                            <p class="email d-inline-block white-border pe-1">info@byroad.com</p>
+                            <p class="phone d-inline-block white-border pe-1">800 297623</p>
+                            <p class="address d-inline-block  pe-1">Dubai, UAE 121689</p>
+                        </div>
+                        <p class="copyright ">©2022 Byroad. All Rights Reserved</p>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 py-lg-0 py-4 white-border">
+                        <p class="footer-links-head">CARS</p>
+                        <div class="row ">
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Aston Martin</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Rolls-Royce</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Lamborgini</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Ferrari</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Porsche</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Bentley</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Jeep</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Ford</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Cadillac</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Tesla</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">GMC</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Dodge</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">BMW</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Chevrolet</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Infinity</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Audi</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Honda</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Jaguar</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Mercedes-Benz</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Range-Rover</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Land Rover</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6 py-lg-0 py-4 white-border">
+                        <p class="footer-links-head">GET STARTED</p>
+                        <a href="./personal-lease.html" class="footer-link">Private Lease</a>
+                       
+                    </div>
+                    <div class="col-lg-2 col-sm-6 py-lg-0 py-4">
+                        <p class="footer-links-head">About</p>
+                        <a href="" class="footer-link">About Us</a>
+                        <a href="" class="footer-link">FAQs</a>
+                        <a href="" class="footer-link">Blog</a>
+                        <a href="" class="footer-link">Privacy Policy</a>
+                        <a href="" class="footer-link">Terms of Use</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- footer End -->
+
+
+
+
+    <!-- Jquery Cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+    <script>
+        function clearFilters(e) {
+            var filterTerms = document.querySelectorAll('.filter-term');
+
+            for (var i = 0; i < filterTerms.length; i++) {
+                filterTerms[i].classList.add('d-none');
+            }
+            e.classList.add('d-none')
+
+        }
+    </script>
+</body>
+
+</html>

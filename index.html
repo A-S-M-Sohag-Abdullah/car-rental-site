@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font-awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body>
+
+    <!-- header Start -->
+    <header>
+
+        <!--Navigation  -->
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid px-0">
+                        <a class="navbar-brand pe-lg-5" href="./index.html">Rent A Car</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                       </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link px-xl-4 px-lg-2 px-0" href="./personal-lease.html">Personal Lease</a>
+                                </li>
+                               
+                            </ul>
+                            <form class="d-flex align-items-center">
+
+                                <button class="btn btn-parrot-green" type="submit"><i class="fas fa-phone"></i> Contact us</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <!-- header End -->
+
+    <!-- Main Start -->
+    <main>
+
+        <!-- banner start -->
+        <section id="banner" class="mb-5">
+            <div class="container" id="home-banner">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="banner-title">Car Leasing and <br> Subscriptions</h1>
+                        
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div id="car-search-form" class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-sm-9 col-12">
+                        <!-- ==============Search Form============== -->
+                        <form class="row align-items-center gy-lg-0 gy-4">
+                            <div class="input-field col-lg-3 col-6">
+
+                                <label for="Catagory">Catagory</label>
+                                <input type="text" id="Catagory">
+
+
+                                <i class="fas fa-chevron-down"></i>
+                                <div class="input-field-cover"></div>
+                                <ul class="input-field-options">
+                                    <li>Private Lease</li>
+                                    <li>Business Lease</li>
+
+                                </ul>
+                            </div>
+                            <div class="input-field col-lg-3 col-6">
+
+                                <label for="Car-Make">Car Make</label>
+                                <input type="text" id="Car-Make">
+
+
+                                <i class="fas fa-chevron-down"></i>
+                                <div class="input-field-cover"></div>
+                                <ul class="input-field-options">
+                                    <li>Aston Martin</li>
+                                    <li>Rolls-Royce</li>
+                                    <li>Lamborgini</li>
+                                    <li>Ferrari</li>
+                                    <li>Porsche</li>
+                                    <li>Bentley</li>
+                                    <li>Jeep</li>
+                                    <li>Ford</li>
+                                    <li>Cadillac</li>
+                                    <li>Tesla</li>
+                                    <li>GMC</li>
+                                    <li>Dodge</li>
+                                    <li>BMW</li>
+                                    <li>Chevrolet</li>
+                                    <li>Infinity</li>
+                                    <li>Audi</li>
+                                    <li>Honda</li>
+                                    <li>Jaguar</li>
+                                    <li>BMW</li>
+                                    <li>Mercedes-Benz</li>
+                                    <li>Range-Rover</li>
+                                    <li>Land Rover</li>
+                                </ul>
+                            </div>
+
+                            <div class="input-field col-lg-4 col-12">
+
+                                <label for="Price" class="place-holder-label">Price</label>
+                                <input type="text" id="Price" disabled class="d-none">
+
+
+                                <i class="fas fa-chevron-down"></i>
+                                <div class="input-field-cover"></div>
+                                <ul class="input-field-options price-options">
+                                    <li><input type="checkbox"><span class="checker"><i class="fas fa-check"></i></span>USD 100 - USD 200</li>
+                                    <li><input type="checkbox"><span class="checker"><i class="fas fa-check"></i></span>USD 201 - USD 300</li>
+                                    <li><input type="checkbox"><span class="checker"><i class="fas fa-check"></i></span>USD 301 - USD 400</li>
+                                    <li><input type="checkbox"><span class="checker"><i class="fas fa-check"></i></span>USD 401 - USD 500</li>
+
+
+                                </ul>
+                            </div>
+
+                            <button type="submit" class="col-lg-2 col-12 btn-parrot-green"><i class="fas fa-search"></i>Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner end -->
+
+        <!-- Car models Start -->
+        <section id="car-models">
+            <div class="container py-5">
+
+                <div class="row justify-content-between py-4 d-flex align-items-center">
+                    <div class="col-6">
+                        <h2 class="car-models-title">Find car by model</h2>
+                    </div>
+
+                </div>
+
+                <!-- car-models-slider -->
+                <div class="car-models-carousel ">
+                    <div class="row gy-2">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="./personal-lease.html" class="car-model-card">
+                                <div class="car-model-car-img">
+                                    <img src="./images/car-model-img-1.png" alt="" class="img-fluid w-75 mx-auto">
+                                </div>
+                                <h4 class="car-model-car-name">Economy</h4>
+                                <button class="car-model-green-btn">24 vehicles</button>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="./personal-lease.html" class="car-model-card">
+                                <div class="car-model-car-img">
+                                    <img src="./images/car-model-img-2.png" alt="" class="img-fluid w-75 mx-auto">
+                                </div>
+                                <h4 class="car-model-car-name">Crossover</h4>
+                                <button class="car-model-green-btn">16 vehicles</button>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="./personal-lease.html" class="car-model-card">
+                                <div class="car-model-car-img">
+                                    <img src="./images/car-model-img-3.png" alt="" class="img-fluid w-75 mx-auto">
+                                </div>
+                                <h4 class="car-model-car-name">
+                                    Intermediate
+                                </h4>
+                                <button class="car-model-green-btn">19 vehicles</button>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="./personal-lease.html" class="car-model-card">
+                                <div class="car-model-car-img">
+                                    <img src="./images/car-model-img-4.png" alt="" class="img-fluid w-75 mx-auto">
+                                </div>
+                                <h4 class="car-model-car-name">Executive</h4>
+                                <button class="car-model-green-btn">21 vehicles</button>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="./personal-lease.html" class="car-model-card">
+                                <div class="car-model-car-img">
+                                    <img src="./images/car-model-img-5.png" alt="" class="img-fluid w-75 mx-auto">
+                                </div>
+                                <h4 class="car-model-car-name">Premium</h4>
+                                <button class="car-model-green-btn">16 vehicles</button>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="./personal-lease.html" class="car-model-card">
+                                <div class="car-model-car-img">
+                                    <img src="./images/car-model-img-6.png" alt="" class="img-fluid w-75 mx-auto">
+                                </div>
+                                <h4 class="car-model-car-name">Electric</h4>
+                                <button class="car-model-green-btn">16 vehicles</button>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="./personal-lease.html" class="car-model-card">
+                                <div class="car-model-car-img">
+                                    <img src="./images/car-model-img-7.png" alt="" class="img-fluid w-75 mx-auto">
+                                </div>
+                                <h4 class="car-model-car-name">Convertible</h4>
+                                <button class="car-model-green-btn">19 vehicles</button>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="./personal-lease.html" class="car-model-card">
+                                <div class="car-model-car-img">
+                                    <img src="./images/car-model-img-8.png" alt="" class="img-fluid w-75 mx-auto">
+                                </div>
+                                <h4 class="car-model-car-name">Sports</h4>
+                                <button class="car-model-green-btn">21 vehicles</button>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="./personal-lease.html" class="car-model-card">
+                                <div class="car-model-car-img">
+                                    <img src="./images/car-model-img-9.png" alt="" class="img-fluid w-75 mx-auto">
+                                </div>
+                                <h4 class="car-model-car-name">SUV</h4>
+                                <button class="car-model-green-btn">16 vehicles</button>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="./personal-lease.html" class="car-model-card">
+                                <div class="car-model-car-img">
+                                    <img src="./images/car-model-img-10.png" alt="" class="img-fluid w-75 mx-auto">
+                                </div>
+                                <h4 class="car-model-car-name">Luxury</h4>
+                                <button class="car-model-green-btn">16 vehicles</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Car models End -->
+
+
+        <!-- Lease Deals Start -->
+        <section id="lease-deals">
+            <div class="container py-5">
+
+                <div class="row justify-content-between py-4 d-flex align-items-center">
+                    <div class="col-8">
+                        <h2 class="lease-deals-title">Lease Deals</h2>
+                        <p class="lease-deals-subtitle">These offers are a starting point, our team will work with you on the finer details.</p>
+                    </div>
+                    <div class="carousel-nav text-end col">
+
+                        <button class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                        <button class="next-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- lease-deals-slider -->
+                <div class="owl-carousel owl-theme lease-deals-carousel pt-5">
+                    <div class="item">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image1.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Nissan Kicks 2020</h4>
+                            <p class="car-mileage">Starting from USD 100</p>
+
+                            <!-- <div class="lease-deal-packages py-3 d-flex justify-content-between">
+                                <div class="deal-package">
+                                    <h5 class="car-price">AED 1,799</h5>
+                                    <p class="package-period">36 months</p>
+                                </div>
+                                <div class="deal-package">
+                                    <h5 class="car-price">AED 1,899</h5>
+                                    <p class="package-period">24 months</p>
+                                </div>
+                                <div class="deal-package">
+                                    <h5 class="car-price">AED 1,999</h5>
+                                    <p class="package-period">12 months</p>
+                                </div>
+                            </div> -->
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image2.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">Infiniti Q50 2020</h4>
+                            <p class="car-mileage">Starting from USD 100</p>
+
+                            <!--  <div class="lease-deal-packages py-3 d-flex justify-content-between">
+                                <div class="deal-package">
+                                    <h5 class="car-price">AED 3,799</h5>
+                                    <p class="package-period">36 months</p>
+                                </div>
+                                <div class="deal-package">
+                                    <h5 class="car-price">AED 3,899</h5>
+                                    <p class="package-period">24 months</p>
+                                </div>
+                                <div class="deal-package">
+                                    <h5 class="car-price">AED 3,999</h5>
+                                    <p class="package-period">12 months</p>
+                                </div>
+                            </div> -->
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="lease-deals-card">
+                            <div class="lease-deals-img">
+                                <img src="./images/lease-deal-Image3.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <h4 class="lease-deals-car-model">BMW 420i 2019</h4>
+                            <p class="car-mileage">Starting from USD 100</p>
+
+                            <!-- <div class="lease-deal-packages py-3 d-flex justify-content-between">
+                                <div class="deal-package">
+                                    <h5 class="car-price">AED 4,440</h5>
+                                    <p class="package-period">36 months</p>
+                                </div>
+                                <div class="deal-package">
+                                    <h5 class="car-price">AED 4,500</h5>
+                                    <p class="package-period">24 months</p>
+                                </div>
+                                <div class="deal-package">
+                                    <h5 class="car-price">AED 4,699</h5>
+                                    <p class="package-period">12 months</p>
+                                </div>
+                            </div> -->
+
+                            <a href="./form-lease-deals.html">
+                                <button class="quote-btn">Reserve Car</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Lease Deals End -->
+
+        <!-- Testimonial Start -->
+        <section id="testimonial">
+            <div class="container py-5">
+
+                <div class="row justify-content-between py-4 d-flex align-items-center">
+                    <div class="col-8">
+                        <h2 class="testimonial-title">Testimonials</h2>
+                        <p class="testimonial-subtitle">We're rated 5 stars  </p>
+                    </div>
+                    <div class="carousel-nav text-end col">
+
+                        <button class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                        <button class="next-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- testimonial-slider -->
+                <div class="owl-carousel owl-theme testimonial-carousel pb-5">
+                    <div class="item">
+                        <div class="testimonial-card">
+                            <h3 class="testimonial-card-title">“Terrific Customer Service!”</h3>
+                            <p class="testimonial-desp pt-3 pb-4">“Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro minima laudantium architecto quos recusandae cum, ratione, repudiandae eius dolorem obcaecati laborum modi quasi sint tempora, cumque quidem consequuntur harum numquam ex magni voluptatibus. Praesentium quod placeat at optio repellat provident ut est labore. Quas laboriosam qui deserunt maxime totam? Possimus!</p>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h6 class="testimonial-author">Saud Abdulla</h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-card">
+                            <h3 class="testimonial-card-title">“The Best Lease Deals in the world</h3>
+                            <p class="testimonial-desp pt-3 pb-4">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consectetur adipisci id ipsa expedita corporis maxime nisi eum nam quae quisquam ratione fugit qui ex a, quam voluptatem labore inventore quasi architecto officia minus aliquam necessitatibus. Placeat animi consequuntur architecto repudiandae accusantium, similique eaque quam. Molestias, quam blanditiis. Dolores, magni. </p>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h6 class="testimonial-author">Orcun Unsal</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial End -->
+
+
+    </main>
+    <!-- Main End -->
+
+    <!-- footer Start -->
+    <footer>
+        <section id="footer">
+            <div class="container py-5">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4 col-sm-6 py-lg-0 py-4 white-border">
+                        <div class="logo-scoial-icons d-flex align-items-center">
+                            <h3 class="footer-logo"> <a href="">Rent A Car</a></h3>
+                            <div class="social-icons">
+                                <a href="">
+                                    <i class="fab fa-twitter px-1"></i>
+                                </a>
+                                <a href=""><i class="fab fa-facebook-f px-1"></i></a>
+                                <a href=""><img src="./images/instagram-icon.png" alt="" class="img-fluid px-1"></a>
+
+                            </div>
+                        </div>
+                        <p class="footer-logo-sub">Our Dubai car leasing experts help you travel better ByRoad. Just drive, we'll take care of the rest.</p>
+                        <div class="app-download">
+                            <a href=""><img src="./images/iTunes Store.svg" alt="" class="img-fluid py-1"></a>
+                            <a href=""><img src="./images/Google Play.svg" alt="" class="img-fluid py-1"></a>
+
+                        </div>
+                        <div class="contact-address">
+                            <p class="email d-inline-block white-border pe-1">info@byroad.com</p>
+                            <p class="phone d-inline-block white-border pe-1">800 297623</p>
+                            <p class="address d-inline-block  pe-1">Dubai, UAE 121689</p>
+                        </div>
+                        <p class="copyright ">©2022 Byroad. All Rights Reserved</p>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 py-lg-0 py-4 white-border">
+                        <p class="footer-links-head">CARS</p>
+                        <div class="row ">
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Aston Martin</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Rolls-Royce</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Lamborgini</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Ferrari</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Porsche</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Bentley</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Jeep</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Ford</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Cadillac</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Tesla</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">GMC</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Dodge</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">BMW</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Chevrolet</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Infinity</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Audi</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Honda</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Jaguar</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Mercedes-Benz</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Range-Rover</a>
+                            </div>
+                            <div class="col-4">
+                                <a href="./personal-lease.html" class="footer-link">Land Rover</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6 py-lg-0 py-4 white-border">
+                        <p class="footer-links-head">GET STARTED</p>
+                        <a href="./personal-lease.html" class="footer-link">Private Lease</a>
+                        
+                    </div>
+                    <div class="col-lg-2 col-sm-6 py-lg-0 py-4">
+                        <p class="footer-links-head">About</p>
+                        <a href="" class="footer-link">About Us</a>
+                        <a href="" class="footer-link">FAQs</a>
+                        <a href="" class="footer-link">Blog</a>
+                        <a href="" class="footer-link">Privacy Policy</a>
+                        <a href="" class="footer-link">Terms of Use</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- footer End -->
+
+
+
+
+    <!-- Jquery Cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+    <script>
+        // form - functionality
+        var inputCover = document.querySelectorAll('.input-field-cover');
+        var inputOption = document.querySelectorAll('ul.input-field-options li');
+        var inputOpt = document.querySelector('ul.input-field-options li');
+
+        for (var i = 0; i < inputCover.length; i++) {
+
+            inputCover[i].addEventListener('click', function(e) {
+
+                if (this.previousElementSibling.previousElementSibling.value.length == 0) {
+                    this.previousElementSibling.previousElementSibling.previousElementSibling.classList.toggle("animated-label");
+                } else {
+                    this.previousElementSibling.previousElementSibling.previousElementSibling.classList.add("animated-label");
+                }
+
+
+
+
+                e.target.nextElementSibling.classList.toggle("not-hidden-list");
+                this.previousElementSibling.classList.toggle("animated-arrow");
+
+                for (var j = 0; j < inputCover.length; j++) {
+                    if (this != inputCover[j]) {
+                        inputCover[j].nextElementSibling.classList.remove("not-hidden-list");
+                        inputCover[j].previousElementSibling.classList.remove("animated-arrow");
+                        if (inputCover[j].previousElementSibling.previousElementSibling.value.length == 0) {
+                            inputCover[j].previousElementSibling.previousElementSibling.previousElementSibling.classList.remove("animated-label");
+
+
+                        }
+                    }
+
+                }
+            })
+        }
+
+        for (var i = 0; i < inputOption.length; i++) {
+            inputOption[i].addEventListener('click', function(e) {
+                /* console.log(this.parentElement.previousElementSibling.previousElementSibling.previousElementSibling); */
+                this.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.value = e.target.innerText
+
+
+            })
+        }
+
+        window.addEventListener('click', function(e) {
+            if ((e.target.nodeName == "INPUT")) {
+                //do nothing
+            } else if ((!e.target.classList.contains('input-field-cover'))) {
+                for (var i = 0; i < inputOption.length; i++) {
+                    inputOption[i].parentElement.classList.remove('not-hidden-list');
+                    if (inputOption[i].parentElement.previousElementSibling.previousElementSibling.previousElementSibling.value.length == 0) {
+                        inputOption[i].parentElement.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.classList.remove('animated-label');
+                    }
+                    inputOption[i].parentElement.previousElementSibling.previousElementSibling.classList.remove("animated-arrow");
+                }
+            }
+            console.log(e.target.nodeName);
+        })
+
+
+        //carousel -1
+        $('.lease-deals-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        })
+        var owl2 = $('#lease-deals .lease-deals-carousel');
+        owl2.owlCarousel();
+        // Go to the next item
+        $('#lease-deals .carousel-nav .next-btn').click(function() {
+                owl2.trigger('next.owl.carousel');
+            })
+            // Go to the previous item
+        $('#lease-deals .carousel-nav .prev-btn').click(function() {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owl2.trigger('prev.owl.carousel', [300]);
+        })
+
+        //carousel -2
+        $('.testimonial-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                1200: {
+                    items: 2
+                }
+            }
+        })
+        var owl3 = $('#testimonial .testimonial-carousel');
+        owl3.owlCarousel();
+        // Go to the next item
+        $('#testimonial .carousel-nav .next-btn').click(function() {
+                owl3.trigger('next.owl.carousel');
+            })
+            // Go to the previous item
+        $('#testimonial .carousel-nav .prev-btn').click(function() {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owl3.trigger('prev.owl.carousel', [300]);
+        })
+    </script>
+</body>
+
+</html>

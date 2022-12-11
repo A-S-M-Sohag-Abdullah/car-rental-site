@@ -1,0 +1,125 @@
+@media (max-width:1200px) {
+    .banner-title {
+        font-size: 45px;
+    }
+    .banner-subtitle {
+        font-size: 18px;
+    }
+    .experience-title {
+        font-size: 30px;
+    }
+    .exp-sub {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .car-type-selector,
+    .lease-time-selector,
+    .price-selector {
+        position: relative;
+        width: calc(100% / 6);
+        margin: 0 0 10px;
+    }
+    .price-selector {
+        width: 25%;
+    }
+}
+
+@media (max-width:991px) {
+    #banner {
+        background-position: -450px 0 !important;
+    }
+    #home-banner {
+        top: 40%;
+    }
+    #car-search-form {
+        bottom: -10%;
+    }
+    #car-search-form form .input-field {
+        padding: 10px;
+        border-right: none;
+    }
+    #car-search-form form .input-field label.animated-label {
+        top: 2px !important;
+    }
+    /*  #car-search-form form .input-field label.place-holder-label.animated-label {
+        top: 50% !important;
+    } */
+    .exp-img {
+        height: 400px;
+    }
+    .exp-card-content {
+        position: relative !important;
+        height: 380px;
+        top: 0%;
+        padding: 40px 60px;
+        transform: translateY(0%);
+    }
+    div.white-border {
+        border-right: none;
+    }
+    .car-type-selector,
+    .lease-time-selector {
+        position: relative;
+        width: calc(100% / 4);
+        margin: 0 0 10px;
+    }
+    .price-selector {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    .deal-title {
+        font-size: 45px;
+    }
+    .deal-card {
+        height: 400px;
+    }
+}
+
+@media (max-width:576px) {
+    .banner-title {
+        font-size: 35px;
+    }
+    .banner-subtitle {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .car-model-car-img {
+        height: auto;
+    }
+    .experience-title {
+        font-size: 25px;
+    }
+    .exp-card-content {
+        position: relative !important;
+        height: 380px;
+        top: 0%;
+        padding: 30px;
+        transform: translateY(0%);
+    }
+    .exp-img {
+        height: auto;
+    }
+    .car-type-selector,
+    .lease-time-selector {
+        position: relative;
+        width: calc(100% / 3);
+        margin: 0 0 10px;
+    }
+}
+
+@media (max-width:450px) {
+    .car-type-selector,
+    .lease-time-selector {
+        position: relative;
+        width: calc(100% / 2);
+        margin: 0 0 10px;
+    }
+    .price-selector {
+        width: 100%;
+    }
+    .filter-term button.cross {
+        margin-left: 5px;
+    }
+}

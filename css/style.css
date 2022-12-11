@@ -1,0 +1,1049 @@
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*************
+Header CSS
+**************/
+
+.navbar-brand {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    transform: translateY(1.5px);
+}
+
+a.nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000 !important;
+}
+
+a.active {
+    color: #3BB95A !important;
+}
+
+.nav-link:hover {
+    color: #3BB95A !important;
+}
+
+.enter {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000 !important;
+    padding: 0 10px !important;
+}
+
+.enter:hover {
+    color: #3BB95A !important;
+}
+
+.btn-parrot-green {
+    background-color: #3BB95A !important;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 15px;
+    border-radius: 8px !important;
+    border: 1px solid #3BB95A !important;
+    transition: all 0.25s;
+}
+
+.btn-parrot-green i {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.btn-parrot-green:hover {
+    color: #3BB95A;
+    background-color: #fff !important;
+    border: 1px solid #3BB95A !important;
+}
+
+
+/**************
+banner Css
+*****************/
+
+#banner {
+    background: url("../images/homebg.png");
+    background-repeat: no-repeat !important;
+    background-position: 0 0;
+    background-size: cover !important;
+    height: 85vh;
+    width: calc(100vw - 6%);
+    margin: 0 auto;
+    position: relative;
+    max-height: 714px;
+    min-height: 580px;
+}
+
+#home-banner,
+#exotic-car-club-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-title {
+    font-size: 55px;
+}
+
+.banner-subtitle {
+    font-size: 20px;
+}
+
+.button-pretitle {
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+
+.banner-title,
+.banner-subtitle {
+    color: white;
+    font-weight: bold;
+}
+
+#car-search-form {
+    position: absolute;
+    bottom: -10%;
+    padding: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#car-search-form form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    filter: drop-shadow(1.575px 6.821px 18px rgba(58, 59, 59, 0.149));
+}
+
+#car-search-form form .input-field {
+    position: relative;
+    border-right: 1px solid #EDE8E9;
+    min-height: 25px;
+}
+
+#car-search-form form .input-field:last-of-type {
+    border-right: none;
+}
+
+#car-search-form form .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+    color: #9A9EA7;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+#car-search-form form .input-field label.place-holder-label {
+    top: 50% !important;
+    font-size: 14px !important;
+}
+
+#car-search-form form .input-field label.animated-label {
+    font-size: 12px !important;
+    top: -10px !important;
+}
+
+#car-search-form form .input-field label.place-holder-label.animated-label {
+    top: 50% !important;
+    font-size: 14px !important;
+    color: #000;
+}
+
+#car-search-form form .input-field i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #9A9EA7;
+    font-size: 12px;
+    transition: all 0.25s;
+}
+
+i.animated-arrow {
+    color: #000 !important;
+    transform: translateY(-50%) rotate(180deg) !important;
+}
+
+#car-search-form form .input-field .input-field-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+#car-search-form form .input-field .input-field-options {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    left: 0;
+    top: 100%;
+    display: none;
+    filter: drop-shadow(1.575px 6.821px 18px rgba(58, 59, 59, 0.149));
+    z-index: 999;
+    overflow-x: hidden;
+    border: 1px solid #E4E6E8;
+    max-height: 350px;
+}
+
+#car-search-form form .input-field ul.price-options li {
+    position: relative;
+    padding-left: 30px !important;
+}
+
+#car-search-form form .input-field ul.price-options li input[type="checkbox"] {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    z-index: 20;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+#car-search-form form .input-field ul.price-options li span.checker {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    z-index: 15;
+    border: 1px solid #E4E6E8;
+    border-radius: 3px;
+    background-color: #fff;
+    color: white;
+}
+
+#car-search-form form .input-field ul.price-options li span.checker i {
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    font-size: 15px;
+    color: white;
+}
+
+#car-search-form form .input-field ul.price-options li input[type="checkbox"]:checked+span.checker {
+    background-color: #3BB95A;
+}
+
+#car-search-form form .input-field ul.not-hidden-list {
+    display: block !important;
+}
+
+#car-search-form form .input-field ul.input-field-options li {
+    display: block;
+    padding: 10px 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+#car-search-form form .input-field ul.input-field-options li:hover {
+    background-color: #F5F6F7;
+}
+
+#car-search-form form input[type="text"] {
+    background: transparent;
+    border: none;
+    outline: 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/**************
+Car models Css
+*****************/
+
+.slider-counter {
+    color: #9A9EA7;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: #F5F6F7;
+    color: #9A9EA7;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.car-models-carousel .item {
+    padding: 10px;
+}
+
+.car-models-title,
+.car-club-fleet-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.car-model-card {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 0;
+    background-color: white;
+}
+
+.car-model-car-img {
+    height: 125px;
+}
+
+.car-model-car-img img {
+    height: 100% !important;
+}
+
+.car-model-car-name {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.car-model-green-btn {
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    outline: 0;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: #F5F6F7;
+    color: #9A9EA7;
+}
+
+a.car-model-card:hover {
+    box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.149);
+}
+
+.car-model-card:hover .car-model-green-btn {
+    color: #3BB95A;
+    background: #E0F5E5;
+}
+
+.owl-nav {
+    display: none;
+}
+
+
+/**************
+car-lease Css
+*****************/
+
+.car-lease-card {
+    padding: 30px;
+    border: 1px solid #E4E6E8;
+    border-radius: 14px;
+    height: 100%;
+}
+
+.car-lease-img {
+    width: 64px;
+    padding-bottom: 7px;
+}
+
+.car-lease-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+ul.car-lease-features {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.car-lease-features li {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 7px 0;
+    display: flex;
+    line-height: 20px;
+}
+
+ul.car-lease-features li::before {
+    content: url('../images/check-circle1.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    transform: translateY(1px);
+}
+
+
+/**************
+Deals Css
+*****************/
+
+.deal-card {
+    background-image: url('../images/deal-img1.png');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: 0 0;
+    position: relative;
+    text-align: center;
+    margin: auto 0;
+    height: 500px;
+    color: #fff !important;
+}
+
+.deal-card-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.deal-title {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.deal-sub-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.deal-btn {
+    background-color: #3BB95A;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 5px !important;
+    border: 1px solid #3BB95A;
+    transition: all 0.25s;
+    color: #fff;
+}
+
+.deal-btn img {
+    padding-right: 10px;
+    transform: translateY(-3px);
+}
+
+.deal-btn-subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+
+/**************
+lease-deals Css
+*****************/
+
+.lease-deals-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.lease-deals-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0D0A19;
+}
+
+.lease-deals-card {
+    border: 1px solid #E4E6E8;
+    padding: 25px;
+    border-radius: 14px;
+}
+
+.lease-deals-car-model {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.car-mileage {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.lease-deal-packages {
+    width: 275px;
+}
+
+.lease-deal-packages .deal-package {
+    position: relative;
+}
+
+.lease-deal-packages .deal-package::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 65%;
+    background-color: #E4E6E8;
+    position: absolute;
+    left: -25%;
+    top: 0;
+    transform: rotate( 19deg);
+}
+
+.lease-deal-packages .deal-package:first-child::before {
+    display: none;
+}
+
+.lease-deal-packages .deal-package .car-price {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.lease-deal-packages .deal-package .package-period {
+    font-size: 12px;
+    transform: translateX(-10px);
+}
+
+.lease-deal-packages .deal-package:first-child .package-period {
+    transform: translateX(0);
+}
+
+.quote-btn {
+    background-color: #3BB95A;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 5px !important;
+    border: 1px solid #3BB95A;
+    transition: all 0.25s;
+    color: #fff;
+}
+
+
+/**************
+Testimonial Css
+*****************/
+
+.testimonial-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.testimonial-subtitle {
+    font-size: 14px;
+}
+
+.testimonial-card {
+    border: 1px solid #E4E6E8;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.testimonial-card-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.testimonial-desp {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.testimonial-stars {
+    padding-bottom: 10px;
+}
+
+.testimonial-stars i {
+    color: #3BB95A;
+}
+
+.testimonial-author {
+    font-size: 14;
+    font-weight: 600;
+}
+
+
+/**************
+experience Css
+*****************/
+
+.experience-card {
+    background: #3BB95A;
+    color: white;
+    position: relative;
+}
+
+.exp-card-content {
+    position: absolute;
+    top: 50%;
+    padding: 0 60px;
+    transform: translateY(-50%);
+}
+
+.experience-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.exp-sub {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.exp-des {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.white-btn {
+    background-color: white;
+    color: #3BB95A;
+    padding: 10px 40px;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+/************
+footer css
+**************/
+
+#footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-logo {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-logo a {
+    color: #fff;
+}
+
+.social-icons {
+    transform: translateY(-5px);
+    padding: 0 20px;
+}
+
+.social-icons a {
+    color: white;
+}
+
+.social-icons i {
+    font-size: 14px;
+}
+
+.footer-logo-sub {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.white-border {
+    border-right: 1px solid white;
+}
+
+.footer-links-head {
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 10px;
+    margin-bottom: 10px !important;
+}
+
+.footer-link {
+    color: white !important;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    padding: 10px 0 0 10px;
+}
+
+.contact-address {
+    padding-top: 25px;
+}
+
+.contact-address p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/*************
+ur dream css
+**************/
+
+.ur-dream-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.howitworks {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ur-drem-desp {
+    font-size: 15px;
+}
+
+
+/**************
+car-club-fleet css
+****************/
+
+.car-club-fleet-sub {
+    font-size: 14px;
+}
+
+.reserve-box {
+    padding: 25px;
+    border: 1px solid #E4E6E8;
+    border-radius: 14px;
+}
+
+.reserve-box-img img {
+    width: 100%;
+}
+
+.reserve-car-model {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.reseve-car-price {
+    font-size: 14px;
+}
+
+
+/**************
+Join club  css
+****************/
+
+#join-club {
+    background-color: #F3B54B;
+}
+
+.join-club-text {
+    font-size: 39px;
+    color: white;
+}
+
+
+/************
+breadcrump CSS
+*************/
+
+#breadcrump {
+    border-top: 1px solid #E3E3E3;
+}
+
+.breadcrump {
+    font-size: 14px;
+}
+
+.breadcrump .pre-link,
+.angle {
+    font-weight: 500;
+    color: #000;
+}
+
+.angle {
+    padding: 0 5px;
+}
+
+.breadcrump .current-page {
+    color: #5E6063;
+}
+
+
+/************
+form header CSS
+*************/
+
+.form-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.form-sub {
+    font-size: 15px;
+}
+
+
+/************
+invite form CSS
+*************/
+
+.invite-form-input label {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #9A9EA7;
+}
+
+.invite-form-input input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #E4E6E8;
+    border-radius: 8px;
+    outline: 0;
+    font-size: 14px;
+}
+
+.invite-form-input input[type="text"]::placeholder {
+    color: #9A9EA7;
+    font-weight: 500;
+}
+
+.invite-form-input input[type="radio"] {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    transform: translate(0px, 5px);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.invite-form-input span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #9A9EA7;
+    margin-right: 20px;
+    transition: all 0.25s ease;
+}
+
+.invite-form-input span::before {
+    content: "";
+    background: #F5F6F7;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.25s ease;
+    box-shadow: inset 0 0 0 0px #3bb95a;
+    display: inline-block;
+    transform: translateY(5px);
+}
+
+.invite-form-input input[type="radio"]:checked+span::before {
+    box-shadow: inset 0 0 0 6px #3BB95A;
+}
+
+.invite-form-input input[type="radio"]:checked+span {
+    color: #0D0A19;
+}
+
+.term-cond {
+    color: #5E6063;
+    font-size: 14px;
+}
+
+.term-cond a {
+    color: #5E6063;
+    text-decoration: underline !important;
+}
+
+.invite-form-input button.deal-btn {
+    transform: translateY(-8px);
+}
+
+
+/*************
+Deal features Css
+**************/
+
+.deal-includes-title {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.feature-title i {
+    color: #3BB95A;
+    margin: 0 5px;
+}
+
+.feature-sub {
+    font-size: 14px;
+}
+
+.deal-feature-img {
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+}
+
+
+/*************
+Deals header Css
+**************/
+
+.filter-btn {
+    background-color: white;
+    border: 1px solid #E4E6E8;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+
+/*************
+Car filter Css
+**************/
+
+.filter-term {
+    background-color: #E0F5E5;
+    color: #3BB95A;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 10px 0 0;
+}
+
+.filter-term button.cross {
+    border: none;
+    background: transparent;
+    color: #405F48;
+    margin-left: 10px;
+}
+
+.clear-all-btn {
+    background-color: white;
+    color: #405F48;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.filter-form {
+    border: 1px solid #E5E7E9;
+    position: absolute !important;
+    background: white;
+    z-index: 2;
+    display: none;
+    width: calc(100% - 24px) !important;
+    margin: 0 auto;
+}
+
+.filter-form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 5;
+    transform: translateY(-50%);
+}
+
+.filter-type-title {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.car-type,
+.Lease-duration,
+.price {
+    width: 97%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.car-type-selector,
+.lease-time-selector,
+.price-selector {
+    position: relative;
+    width: calc(100% / 7);
+    margin: 0 0 10px;
+}
+
+.price-selector {
+    width: 22%;
+}
+
+.check-box {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    border-radius: 2px;
+    color: white;
+    border: 1px solid #E4E6E8;
+}
+
+.check-box i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+}
+
+.filter-form input[type="checkbox"]:checked+.check-box {
+    background-color: #3BB95A;
+    border: 1px solid #3BB95A;
+}
+
+.checker-label {
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.collapse-btn {
+    background-color: white;
+    border: none;
+    color: #9A9EA7;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#filter-terms {
+    flex-wrap: wrap;
+}
